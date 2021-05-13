@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Spencer's Homepage</title>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    </head>
+    <body class="coloredBackground">
+        <div class="container-fluid pageHeading">
+            <a href="index.html" class="altLinkColor font-weight-bold col">
+                <!--Home button source: https://icons.getbootstrap.com/icons/house/-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                </svg>
+                Home
+            </a>
+            <a href="math.html" class="altLinkColor col">
+                Math
+            </a>
+            <a href="beekeeping.html" class="altLinkColor col">
+                Beekeeping
+            </a>
+            <a href="pets.html" class="altLinkColor col">
+                Pets
+            </a>
+        </div>
+
+        <!--For text on top of image: https://www.w3schools.com/howto/howto_css_image_text.asp-->
+        <div class="titleContainer">
+            <img src="images/cats.jpg" alt="Image of my cats" style="width:100%;">
+            <div class="centeredTextOnImage">
+                <h1>Spencer's Homepage!</h1>
+                <h4 class="grayText">A summary of my hobbies, etc.</h4>
+            </div>
+        </div>
+
+        <!--Cards source: https://getbootstrap.com/docs/4.5/components/card/-->
+        <div class="container">
+            <div class="card sectionStyle">
+                <div class="card-body">
+                    <h2>First, a little about me</h2>
+
+                    <hr>
+                    <h4>Hobbies:</h4>
+                        Some of my hobbies include beekeeping and mathing -- check out their pages below!
+                    <hr>
+                    <h4>Sports:</h4>
+                        <p>My sports are:</p>
+                        <div class="container">
+                            <!--Button group source: https://getbootstrap.com/docs/4.5/components/button-group/-->
+                            <!--Source for row: https://getbootstrap.com/docs/4.5/layout/grid/#auto-layout-columns-->
+                            <!--Source for collapse elements: https://getbootstrap.com/docs/4.5/components/collapse/-->
+                            <div class="row card-deck buttonWidth buttonCards">
+                                <div class="card noPadding border-transparent">
+                                    <div class="card-header noPadding" id="headingOne">
+                                        <button class="btn btn-secondary buttonWidth" type="button" data-toggle="collapse" data-target="#collapseCrew" aria-expanded="false" aria-controls="collapseCrew">
+                                            Crew
+                                        </button>
+                                    </div>
+                                    <div class="card-body collapse" id = "collapseCrew">
+                                        I do crew in the spring!
+                                    </div>
+                                </div>
+
+                                <div class="card noPadding border-transparent">
+                                    <div class="card-header noPadding" id="headingTwo">
+                                        <button class="btn btn-secondary buttonWidth" type="button" data-toggle="collapse" data-target="#collapseNordic" aria-expanded="false" aria-controls="collapseNordic">
+                                            Nordic Skiing
+                                        </button>
+                                    </div>
+                                    <div class="card-body collapse" id = "collapseNordic">
+                                        I ski in the winter + summer!
+                                    </div>
+                                </div>
+
+                                <div class="card noPadding border-transparent">
+                                    <div class="card-header noPadding" id="headingThree">
+                                        <button class="btn btn-secondary buttonWidth" type="button" data-toggle="collapse" data-target="#collapseTrack" aria-expanded="false" aria-controls="collapseTrack">
+                                            Track
+                                        </button>
+                                    </div>
+                                    <div class="card-body collapse" id = "collapseTrack">
+                                        You got me -- I don't run track. I do crew instead!
+                                    </div>
+                                </div>
+
+                                <div class="card noPadding border-transparent">
+                                    <div class="card-header noPadding" id="headingFour">
+                                        <button class="btn btn-secondary buttonWidth" type="button" data-toggle="collapse" data-target="#collapseXC" aria-expanded="false" aria-controls="collapseXC">
+                                            XC Running
+                                        </button>
+                                    </div>
+                                    <div class="card-body collapse" id = "collapseXC">
+                                        I run XC in the fall!
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container spacing">
+                        <p>
+                            Just kidding, I actually don't do one of those sports -- can you guess which sport is the odd one out (which one I don't participate in)? Click above to figure out.
+                        </p>
+                        </div>
+
+                    <hr>
+                    <h4>School:</h4>
+                    <p>
+                        I'm taking some electives this year, like CS, Astronomy, and French! Very fun!
+                    </p>
+                </div>
+            </div>
+            <div class="card sectionStyle">
+                <div class="card-body">
+                    <h4 class="centered">Click "Learn More" below to learn a little about each of the categories</h4>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Math</h5>
+                                <p class="card-text">I like math! Learn more below:</p>
+                                <a href="math.html" class="btn btn-primary">Learn More!</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Beekeeping</h5>
+                                <p class="card-text">I keep bees, which has been a fun, rewarding experience!</p>
+                                <a href="beekeeping.html" class="btn btn-primary">Learn More!</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Cats</h5>
+                                <p class="card-text">I have two very cute cats!</p>
+                                <a href="pets.html" class="btn btn-primary">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

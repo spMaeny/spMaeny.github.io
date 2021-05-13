@@ -1,0 +1,106 @@
+.centered
+{
+    text-align: center;
+}
+
+.grayText
+{
+    color: lightgray;
+}
+
+.coloredBackground
+{
+    /*background-color: #b0d0c0;*/
+    background-color: #eafff0;
+}
+
+.titleContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.centeredTextOnImage
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*Source: https://www.w3schools.com/howto/howto_css_image_text.asp*/
+}
+
+.sectionStyle
+{
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.spacing
+{
+    /*Source for padding: https://www.w3schools.com/css/css_padding.asp*/
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.buttonWidth
+{
+    width: 100%;
+    left: 0px;
+}
+
+.test
+{
+    background-color: green;
+}
+
+.noPadding
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.border-transparent
+{
+    border-color: transparent;
+}
+
+.buttonCards
+{
+    display: flex;
+}
+
+.pageHeading
+{
+    background-color: lightgray;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+}
+
+/*Alternate link color source: https://www.w3schools.com/html/html_links_colors.asp*/
+
+.altLinkColor:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.altLinkColor:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.altLinkColor:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.altLinkColor:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
